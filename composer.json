@@ -1,0 +1,46 @@
+{
+    "name": "astrotomic/nova-optional",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Witkowski",
+            "email": "gummibeer@astrotomic.info",
+            "homepage": "https://gummibeer.dev",
+            "role": "Developer"
+        },
+        {
+            "name": "Matt Stauffer",
+            "email": "matt@tighten.co",
+            "homepage": "https://mattstauffer.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "ext-json": "*",
+        "composer/semver": "^1.0 || ^2.0 || ^3.0",
+        "illuminate/console": "^7.0 || ^8.0",
+        "illuminate/filesystem": "^7.0 || ^8.0",
+        "illuminate/support": "^7.0 || ^8.0",
+        "spatie/temporary-directory": "^1.0 || ^2.0",
+        "symfony/process": "^5.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Astrotromic\\NovaOptional\\NovaOptionalServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Astrotromic\\NovaOptional\\": "src"
+        }
+    },
+    "prefer-stable": true
+}
